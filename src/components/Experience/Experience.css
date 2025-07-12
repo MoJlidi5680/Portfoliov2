@@ -1,0 +1,136 @@
+/* Section principale */
+section#experience {
+  padding: 2rem 7vw;
+  margin-top: 2rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Titre */
+section#experience .text-center {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+section#experience h2 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+section#experience .underline {
+  width: 17rem;
+  height: 0.25rem;
+  background-color: #9cfb91;
+  margin: 0 auto;
+  border-radius: 9999px;
+}
+
+section#experience p {
+  margin-top: 1rem;
+  color: var(--text-color, #e9d7d7);
+  font-size: 1.3rem;
+  max-width: 1300px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Timeline supprimée : focus sur les cards */
+.timeline-line, .timeline-circle {
+  display: none;
+}
+
+/* Experience cards */
+.experience-item {
+  background: rgba(17, 24, 39, 0.8); /* dark with opacity */
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 1rem;
+  padding: 2rem;
+  margin-bottom: 2.5rem;
+  box-shadow: 0 12px 40px rgba(116, 233, 129, 0.466);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.experience-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 40px rgba(69, 236, 88, 0.5);
+}
+
+/* Header */
+.experience-header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.experience-header .company-logo {
+  width: 3.5rem;
+  height: 3.5rem;
+  border-radius: 0.75rem;
+  overflow: hidden;
+  background: #fff;
+  flex-shrink: 0;
+}
+
+.experience-header .company-logo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.experience-header h3 {
+  font-size: 1.25rem;
+  color: #f9fafb;
+  margin: 0;
+}
+
+.experience-header h4 {
+  font-size: 0.9rem;
+  color: #d1d5db;
+  margin: 0;
+}
+
+.experience-header p {
+  font-size: 0.8rem;
+  color: #9ca3af;
+  margin: 0.3rem 0 0;
+}
+
+/* Description */
+.experience-desc {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #e5e7eb;
+  margin-top: 1rem;
+}
+
+/* Skills list */
+.skills-list {
+  margin-top: 1rem;
+}
+
+.skills-list h5 {
+  color: #f9fafb;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+
+.skills-list ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  padding: 0;
+}
+
+.skills-list li {
+  background: #5cb552;
+  color: #f9fafb;
+  padding: 0.35rem 1rem;
+  border-radius: 9999px;
+  font-size: 0.75rem;
+  transition: background 0.3s;
+}
+
+.skills-list li:hover {
+  background: #5cb552;
+}

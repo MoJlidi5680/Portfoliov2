@@ -1,38 +1,157 @@
-.App {
-  text-align: center;
+/* Styles globaux */
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* Mode nuit par défaut */
+body.dark-mode {
+  background-color: #050414;
+  color: #eee;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* Mode clair */
+body.light-mode {
+  background-color: #65918fbf;
+  color: #222222;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+/* Liens et éléments adaptatifs */
+body.dark-mode a {
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+body.light-mode a {
+  color: #4b5563;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+/* Navbar (tu peux adapter selon besoin) */
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 1rem 7vw;
+  display: flex;
+  justify-content: center;
+  z-index: 100;
+  background: transparent;
+  transition: background 0.3s, backdrop-filter 0.3s;
+}
+
+.navbar.scrolled {
+  background: rgba(5, 4, 20, 0.8);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 2px 10px rgba(0,0,0,0.5);
+  color: #eee;
+}
+
+.navbar-container {
+  width: 100%;
+  max-width: 1200px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  font-weight: bold;
+  font-size: 1.3rem;
+  cursor: pointer;
+}
+
+/* Styles menu */
+.menu {
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.menu-item {
+  cursor: pointer;
+  color: inherit;
+  transition: color 0.3s;
+}
+
+.menu-item:hover,
+.menu-item.active {
+  color: #9cfb91;
+}
+
+/* Social Icons */
+.social-icons a {
+  margin-left: 1rem;
+  color: inherit;
+  transition: color 0.3s;
+}
+.social-icons a:hover {
+  color: #9cfb91;
+}
+
+/* Toggle mode */
+.mode-toggle {
+  margin-left: 1rem;
+  cursor: pointer;
+  user-select: none;
+}
+
+/* Mobile menu toggle icon */
+.menu-icon {
+  display: none;
+  cursor: pointer;
+  color: #9cfb91;
+}
+
+/* Mobile menu */
+.mobile-menu {
+  position: absolute;
+  top: 70px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80%;
+  background: rgba(5, 4, 20, 0.9);
+  backdrop-filter: blur(15px);
+  border-radius: 10px;
+  padding: 1rem;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.5);
+  z-index: 99;
+}
+.mobile-menu ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 0;
+  margin: 0;
+  align-items: center;
+}
+.mobile-menu-item {
+  cursor: pointer;
+  color: #ddd;
+  transition: color 0.3s;
+}
+.mobile-menu-item:hover,
+.mobile-menu-item.active {
+  color: #9cfb91;
+}
+.mobile-social-icons a {
+  color: #ddd;
+  margin: 0 0.5rem;
+  transition: color 0.3s;
+}
+.mobile-social-icons a:hover {
+  color: #9cfb91;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .menu, .social-icons {
+    display: none;
   }
-  to {
-    transform: rotate(360deg);
+  .menu-icon {
+    display: block;
   }
 }

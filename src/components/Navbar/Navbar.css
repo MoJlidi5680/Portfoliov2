@@ -1,0 +1,67 @@
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: rgba(5, 4, 20, 0.8);
+  backdrop-filter: blur(8px);
+  z-index: 999;
+  transition: all 0.3s ease;
+}
+
+.navbar-container {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 1rem 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.logo {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #9cfb91;
+}
+
+/* Menu centré toujours visible */
+.menu {
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.menu-item {
+  cursor: pointer;
+  color: #ddd;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.menu-item:hover,
+.menu-item.active {
+  color: #9cfb91;
+}
+
+/* Social icons & toggle centrés */
+.social-icons,
+.mode-toggle {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+/* Responsive : rien ne disparait, juste s’adapte en wrap */
+@media (max-width: 768px) {
+  .navbar-container {
+    justify-content: center;
+    gap: 1rem;
+  }
+
+  .menu {
+    gap: 1rem;
+  }
+}
