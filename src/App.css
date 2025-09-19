@@ -56,6 +56,11 @@ body.light-mode a {
   justify-content: space-between;
 }
 
+.logo {
+  font-weight: bold;
+  font-size: 1.3rem;
+  cursor: pointer;
+}
 
 /* Styles menu */
 .menu {

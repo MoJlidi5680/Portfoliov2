@@ -19,9 +19,7 @@
   gap: 2rem;
 }
 
-.navbar-container .logo {
-  display: flex;
-  margin-left: -140px;
+.logo {
   font-size: 1.8rem;
   font-weight: 700;
   color: #9cfb91;
