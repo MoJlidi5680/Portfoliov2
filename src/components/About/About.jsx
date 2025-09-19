@@ -1,7 +1,7 @@
 import React from 'react';
 import { Typewriter } from 'react-simple-typewriter';
 import Tilt from 'react-parallax-tilt';
-import profileImage from '../../assets/logo.png';
+import profileImage from '../../assets/logo.jpg';
 import './About.css';
 
 const About = () => {
@@ -16,12 +16,13 @@ const About = () => {
             I am a <span className="typewriter">
               <Typewriter
                 words={[
-                  "Fullstack Developer",
+                  "Fullstack Developer",  
                   "Artificial Intelligence Engineer",
                   "Machine learning Specialist",
-                  "Deep Learning Expert",
+                  "Deep Learning Specialist",
                   "UI/UX Designer",
-                ]}
+                ]
+              }
                 loop={0}
                 cursor
                 cursorStyle="|"
@@ -38,7 +39,7 @@ const About = () => {
             I develop intelligent tools that simplify workflows and deliver meaningful value to users.
           </p>
           <a
-            href="https://drive.google.com/file/d/1YDloObukVdPIKMYHlr8fy-FtmY1PEfXc/view?usp=sharing"
+            href="https://drive.google.com/file/d/1m-Z98rECQ98HK4buXvRTB-tdgSBIBA1N/view?usp=sharing"
             target="_blank"
             rel="noopener noreferrer"
             className="download-btn"
@@ -57,6 +58,7 @@ const About = () => {
             scale={1.05}
             transitionSpeed={1000}
             gyroscope
+            tiltEnable={false}
           >
             <img
               src={profileImage}

@@ -30,11 +30,11 @@ const Footer = () => {
         <div className="footer-section-block">
           <h3>Suivez-nous</h3>
           <ul className="social-links">
-            <li><a href="https://facebook.com" aria-label="Facebook"><FaFacebookF /></a></li>
-            <li><a href="https://twitter.com" aria-label="Twitter"><FaTwitter /></a></li>
-            <li><a href="https://instagram.com" aria-label="Instagram"><FaInstagram /></a></li>
-            <li><a href="https://linkedin.com" aria-label="LinkedIn"><FaLinkedinIn /></a></li>
-            <li><a href="https://github.com" aria-label="GitHub"><FaGithub /></a></li>
+            <li><a href="https://www.facebook.com/mohamed.jlidi.811378" target="_blank" aria-label="Facebook"><FaFacebookF /></a></li>
+            <li><a href="https://twitter.com" target="_blank" aria-label="Twitter"><FaTwitter /></a></li>
+            <li><a href="https://instagram.com" target="_blank"  aria-label="Instagram"><FaInstagram /></a></li>
+            <li><a href="https://www.linkedin.com/in/mohamed-jlidi-934979265/" target="_blank" aria-label="LinkedIn"><FaLinkedinIn /></a></li>
+            <li><a href="https://github.com/MoJlidi5680" target="_blank" aria-label="GitHub"><FaGithub /></a></li>
           </ul>
         </div>
 

@@ -65,7 +65,7 @@ const Navbar = ({ darkMode, setDarkMode }) => {
           {darkMode ? (
             <MdLightMode size={28} color="#facc15" />
           ) : (
-            <MdDarkMode size={28} color="#374151" />
+            <MdDarkMode size={28} color="white" />
           )}
         </div>
 

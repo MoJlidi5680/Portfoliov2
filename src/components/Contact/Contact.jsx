@@ -13,10 +13,10 @@ const Contact = () => {
 
     emailjs
       .sendForm(
-        "service_zh6k6yj",
-        "template_k15qdtm",
+        "service_fm7wcoa",     
+        "template_qn5d9vs",     
         form.current,
-        "n_7TI25D3LLumAvu9"
+        "JA-Q5dFUjimfFHIhs"    
       )
       .then(
         () => {
@@ -46,38 +46,36 @@ const Contact = () => {
       <div className="contact-header">
         <h2>CONTACT</h2>
         <div className="underline"></div>
-        <p>I’d love to hear from you—reach out for any opportunities or questions!</p>
+        <p>Contact me to collaborate on projects or discuss opportunities.</p>
       </div>
 
       <div className="contact-form-container">
-        <h3>
-          Connect With Me 
-        </h3>
+        <h3>Connect With Me</h3>
 
         <form ref={form} onSubmit={sendEmail} className="contact-form">
           <input
+            type="text"
+            name="from_name"      
+            placeholder="Your Name"
+            required
+            className="input-field"
+          />
+          <input
             type="email"
-            name="user_email"
+            name="from_email"      
             placeholder="Your Email"
             required
             className="input-field"
           />
           <input
             type="text"
-            name="user_name"
-            placeholder="Your Name"
-            required
-            className="input-field"
-          />
-          <input
-            type="text"
-            name="subject"
+            name="subject"        
             placeholder="Subject"
             required
             className="input-field"
           />
           <textarea
-            name="message"
+            name="message"         
             placeholder="Message"
             rows="4"
             required

@@ -15,7 +15,7 @@ body.dark-mode {
 /* Mode clair */
 body.light-mode {
   background-color: #65918fbf;
-  color: #222222;
+  color: white;
 }
 
 /* Liens et éléments adaptatifs */
@@ -24,7 +24,7 @@ body.dark-mode a {
 }
 
 body.light-mode a {
-  color: #4b5563;
+  color: white;
 }
 
 /* Navbar (tu peux adapter selon besoin) */
@@ -38,6 +38,7 @@ body.light-mode a {
   z-index: 100;
   background: transparent;
   transition: background 0.3s, backdrop-filter 0.3s;
+  background: rgba(5, 4, 20, 0.8);
 }
 
 .navbar.scrolled {
@@ -55,11 +56,6 @@ body.light-mode a {
   justify-content: space-between;
 }
 
-.logo {
-  font-weight: bold;
-  font-size: 1.3rem;
-  cursor: pointer;
-}
 
 /* Styles menu */
 .menu {

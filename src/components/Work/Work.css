@@ -104,7 +104,7 @@
   flex-grow: 1;
   margin-bottom: 1rem;
   display: -webkit-box;
-  -webkit-line-clamp: 3; /* clamp to 3 lines */
+ 
   -webkit-box-orient: vertical;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -117,8 +117,8 @@
 
 .tag {
   display: inline-block;
-  background-color: #251f38;
-  color: #9cfb91;
+  background-color: #5cb552;
+  color: #f9fafb;
   font-size: 0.75rem;
   font-weight: 600;
   padding: 0.25rem 0.6rem;

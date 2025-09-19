@@ -3,8 +3,8 @@
 // =====================
 
 // Company Logos
-import ArabSoftLogo from "./assets/company_logo/ArabSoft.png";
-import BimatechLogo from "./assets/company_logo/bimatech.png";
+import prestacodelogo from "./assets/company_logo/prestacode.png";
+import solixylogo from "./assets/company_logo/solixy.png";
 
 // Education Logos
 import IsimgLogo from "./assets/education_logo/isimg.png";
@@ -29,10 +29,8 @@ import Oracle12c from "./assets/tech_logo/oracle12c.png";
 import Tailwind from "./assets/tech_logo/tailwind.svg";
 
 // Work/Project Logos
-import BimaStoreLogo from "./assets/work_logo/BimaStore.png";
-import DawiniLogo from "./assets/work_logo/Dawini.png";
-import FilmiTounsiLogo from "./assets/work_logo/FilmiTounsi.png";
-import La5esliLogo from "./assets/work_logo/La5esli.png";
+import MyEcommercelogo from "./assets/work_logo/MyEcommerce.png";
+import ChildEmotionLogo from "./assets/work_logo/ChildEmotion.png"
 
 // =====================
 // Skills Data
@@ -90,19 +88,20 @@ export const SkillsInfo = [
 export const experiences = [
   {
     id: 0,
-    img: ArabSoftLogo,
+    img: prestacodelogo,
     role: "AI Engineer",
     company: "prestacode",
-    date: "May 2025 - Present",
+    date: "February 2025 - June 2025",
     desc: "Integrating an Intelligent Chatbot into a Legal Consulting Platform for Querying Arabic Documents",
-    skills: ["pythpn", "JavaScript", "Flask", "Git/GitHub"],
+    skills: ["RAG", "LLM", "LangChain", "Vector Database", "NLP", "Python", "JavaScript", "Flask", "Git/GitHub"],
+
   },
   {
     id: 1,
-    img: BimatechLogo,
+    img: prestacodelogo,
     role: "AI Engineer",
     company: "prestacode",
-    date: "August 2024 - September 2024",
+    date: "June 2024 - July 2024",
     desc: "Developed a system for automatic detection of code vulnerabilities in Angular and Spring Boot applications, integrating machine learning and deep learning models for enhanced security analysis",
     skills: [
       "Angular",
@@ -115,10 +114,10 @@ export const experiences = [
   },
  {
   id: 2,
-  img: BimatechLogo, // ou ton logo approprié
+  img: solixylogo,
   role: "Full Stack Developer",
   company: "Prestacode",
-  date: "October 2024 - December 2024",
+  date: "June 2023 - August 2023",
   desc: "Built a project management application with user authentication and a robust admin dashboard. Each user manages their own projects, and each project includes multiple tasks. Developed using React for the frontend, Node.js and Express for the backend, and a MySQL database.",
   skills: [
     "React",
@@ -140,32 +139,28 @@ export const education = [
   {
     id: 0,
     img: LyceeLogo,
-    school: "Zarzis Technical High School",
-    date: "2017 - 2021",
-    grade: " 12,33",
-    degree: "Mathematical",
-    desc: "Focus on solving mathematical problems.",
+    school: "Lycée Manara Gabès",
+    date: "2019 – 2020",
+    degree: "Baccalaureate Math",
+    desc: "Studied in the Baccalaureate Mathematics section, focusing on advanced mathematical concepts and problem solving.",
   },
   {
     id: 1,
     img: IsimgLogo,
-    school:
-      "ISIMG - Higher Institute of Computer Science and Multimedia of Gabès",
-    date: "2021 - 2023",
-    grade: "12,28",
-    degree:
-      "Integrated Preparatory Cycle in Mathematics-Physics-Computer Science",
-    desc: "Built a solid foundation in mathematics, physics, and developed strong problem-solving and algorithmic thinking skills.",
+    school: "ISIMG - Higher Institute of Computer Science and Multimedia of Gabès",
+    date: "2020 – 2022",
+    degree: "Integrated Preparatory Cycle in Mathematics-Physics-Computer Science",
+    desc: "Acquired strong foundations in mathematics, physics, and computer science, with solid problem-solving and algorithmic skills.",
   },
   {
     id: 2,
     img: IsimgLogo,
     school:
       "ISIMG - Higher Institute of Computer Science and Multimedia of Gabès.",
-    date: "2023 - Present",
+    date: "2022 – 2025",
     grade: "In progress",
     degree: "Software Engineering and Information Systems Training Cycle",
-    desc: "Specialization in Fullstack Web Development.",
+    desc: "Specializing in Fullstack Web Development and Artificial Intelligence.",
   },
 ];
 
@@ -176,47 +171,21 @@ export const education = [
 export const projects = [
   {
     id: 0,
-    title: "BimaStore",
-    description: "Multi-vendor e-commerce platform developed in MERN stack.",
-    image: BimaStoreLogo,
-    tags: ["React", "Redux", "Node.js", "MongoDB", "Express"],
-    github: "https://github.com/ToumiFourat/MERN-MultiVendor-Shop",
-    webapp: "https://www.youtube.com/watch?v=f0oHhQv0j9M&t=335s",
+    title: "MyEcommerce",
+    description: "A full-stack e-commerce platform enabling users to browse products, perform advanced searches by category and price range, add items to the cart with quantity management, manage secure login sessions, and contact the team via an email form. Developed with React, Node.js, and MySQL.",
+    image: MyEcommercelogo,
+    tags: ["React", "Node.js", "MySQL"],
+    github: "https://github.com/MoJlidi5680/MyEcommerceOnline.git",
+    webapp: "", 
+    
   },
   {
     id: 1,
-    title: "Dawini",
-    description: "Medical appointment booking platform with smart search.",
-    image: DawiniLogo,
-    tags: ["React", "Node.js", "MongoDB", "Express"],
-    github: "https://github.com/ToumiFourat/E-Appointment",
-    webapp: "https://dawini.tn",
-  },
-  {
-    id: 2,
-    title: "Filmi Tounsi",
-    description: "Tunisian movie streaming site, responsive and easy to use.",
-    image: FilmiTounsiLogo,
-    tags: [
-      "HTML",
-      "CSS",
-      "JavaScript",
-      "Tailwind Css",
-      "React",
-      "MongoDB",
-      "Express",
-    ],
-    github: "https://github.com/ToumiFourat/Movies",
-    webapp: "https://filmitounsi.tn",
-  },
-  {
-    id: 3,
-    title: "La5esli",
-    description:
-      "Web app developed with React and Flask for integrating fine-tuned BART and T5 models to summarize educational YouTube videos.",
-    image: La5esliLogo,
-    tags: ["React", "Flask", "MongoDB", "NLP"],
-    github: "https://github.com/ToumiFourat/YT2Notes",
-    webapp: "https://la5esli.tn",
+    title: "Child Emotion Recognition & Audio Correction",
+    description: "Analyzes children's speech to detect emotions and provides a corrected transcription along with corrected audio. Users can upload an audio file, identify the emotion, correct grammatical errors, and generate the final audio. Developed with ML (Random Forest) for emotion classification, Deep Learning NLP for grammar correction, Speech Recognition for speech-to-text, and Text-to-Speech (TTS) for audio generation.",
+    image: ChildEmotionLogo, 
+    tags: ["AI", "Machine Learning", "Deep Learning", "NLP", "Speech Recognition", "Text-to-Speech", "Python", "Audio Processing"],
+    github: "",
+    webapp: "", 
   },
 ];

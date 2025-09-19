@@ -19,7 +19,9 @@
   gap: 2rem;
 }
 
-.logo {
+.navbar-container .logo {
+  display: flex;
+  margin-left: -140px;
   font-size: 1.8rem;
   font-weight: 700;
   color: #9cfb91;
@@ -28,6 +30,7 @@
 /* Menu centré toujours visible */
 .menu {
   display: flex;
+  color: white;
   gap: 2rem;
   list-style: none;
   flex-wrap: wrap;
@@ -36,7 +39,7 @@
 
 .menu-item {
   cursor: pointer;
-  color: #ddd;
+  color: white;
   font-weight: 500;
   transition: color 0.3s;
 }
@@ -45,8 +48,25 @@
 .menu-item.active {
   color: #9cfb91;
 }
+.social-icons a {
+  display: flex;
+  color: white;
+}
 
 /* Social icons & toggle centrés */
+.social-icons a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white; 
+  font-size: 1.5rem; 
+  transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: #9cfb91; 
+}
+
 .social-icons,
 .mode-toggle {
   display: flex;
