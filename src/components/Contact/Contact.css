@@ -1,0 +1,115 @@
+.contact-section {
+  padding: 2rem 7vw;
+  margin-top: 2rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.contact-header h2 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.contact-header .underline {
+  width: 220px;
+  height: 4px;
+  background: #9cfb91;
+  margin: 0.5rem auto 1.5rem;
+  border-radius: 2px;
+}
+
+.contact-header p {
+  max-width: 700px;
+  margin: 0 auto;
+  color: #e9d7d7;
+  line-height: 1.6;
+  font-size: 1.3rem;
+}
+
+/* Form container avec style similaire aux skills-category */
+.contact-form-container {
+  background: rgba(5, 4, 20, 0.8);
+  border: 2px solid #9cfb91;
+  border-radius: 20px;
+  padding: 2rem;
+  max-width: 450px;
+  width: 100%;
+  box-shadow: 0 4px 20px rgba(156, 251, 145, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contact-form-container:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 30px rgba(156, 251, 145, 0.4);
+}
+
+.contact-form-container h3 {
+  text-align: center;
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+  color: #eee;
+}
+
+/* Formulaire en colonne */
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+/* Inputs et textarea */
+.input-field {
+  padding: 1rem;
+  border-radius: 12px;
+  border: 1px solid #444;
+  background: #131025;
+  color: #ddd;
+  font-size: 1rem;
+  transition: border-color 0.3s, background 0.3s;
+}
+
+.input-field:focus {
+  outline: none;
+  border-color: #9cfb91;
+  background: #1a1a35;
+}
+
+/* textarea spécifique */
+.textarea-field {
+  min-height: 120px;
+  resize: vertical;
+}
+
+/* Bouton d’envoi */
+.btn-send {
+  background: linear-gradient(90deg, #7b3fe4, #e75480);
+  color: white;
+  padding: 1rem;
+  border: none;
+  border-radius: 12px;
+  font-weight: 700;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: opacity 0.3s ease;
+  margin-top: 0.5rem;
+}
+
+.btn-send:hover {
+  opacity: 0.9;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .contact-form-container {
+    max-width: 100%;
+    padding: 1.5rem;
+  }
+}
