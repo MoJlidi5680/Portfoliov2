@@ -1,3 +1,5 @@
+import { FaGitlab } from "react-icons/fa";
+
 // =====================
 // Import Logos
 // =====================
@@ -46,6 +48,8 @@ import RagLogo from "./assets/tech_logo/rag.svg";
 // Work/Project Logos
 import MyEcommercelogo from "./assets/work_logo/MyEcommerce.png";
 import ChildEmotionLogo from "./assets/work_logo/ChildEmotion.png"
+import IntegrationChatbotLogo from "./assets/work_logo/IntegrationChatbot.png";
+import ChatbotLogo from "./assets/work_logo/Chatbot.PNG";
 
 // =====================
 // Skills Data
@@ -84,6 +88,7 @@ export const SkillsInfo = [
     skills: [
       { name: "Git", logo: GitLogo },
       { name: "GitHub", logo: GithubLogo },
+      { name: "GitLab", icon: FaGitlab },
       { name: "Figma", logo: FigmaLogo },
     ],
   },
@@ -124,7 +129,7 @@ export const experiences = [
     company: "prestacode",
     date: "February 2025 - June 2025",
     desc: "Integrating an Intelligent Chatbot into a Legal Consulting Platform for Querying Arabic Documents",
-    skills: ["RAG", "LLM", "LangChain", "Vector Database", "NLP", "Python", "JavaScript", "Flask", "Git/GitHub"],
+    skills: ["RAG", "LLM", "LangChain", "Vector Database", "NLP", "Python", "Flask", "Git/GitHub"],
 
   },
   {
@@ -169,11 +174,12 @@ export const experiences = [
 export const education = [
   {
     id: 0,
-    img: LyceeLogo,
-    school: "Lycée Manara Gabès",
-    date: "2019 – 2020",
-    degree: "Baccalaureate Math",
-    desc: "Studied in the Baccalaureate Mathematics section, focusing on advanced mathematical concepts and problem solving.",
+    img: IsimgLogo,
+    school:
+      "ISIMG - Higher Institute of Computer Science and Multimedia of Gabès.",
+    date: "2022 – 2025",
+    degree: "Software Engineering and Information Systems Training Cycle",
+    desc: "Specializing in Fullstack Web Development and Artificial Intelligence.",
   },
   {
     id: 1,
@@ -185,13 +191,11 @@ export const education = [
   },
   {
     id: 2,
-    img: IsimgLogo,
-    school:
-      "ISIMG - Higher Institute of Computer Science and Multimedia of Gabès.",
-    date: "2022 – 2025",
-    grade: "In progress",
-    degree: "Software Engineering and Information Systems Training Cycle",
-    desc: "Specializing in Fullstack Web Development and Artificial Intelligence.",
+    img: LyceeLogo,
+    school: "Lycée Manara Gabès",
+    date: "2019 – 2020",
+    degree: "Baccalaureate Math",
+    desc: "Studied in the Baccalaureate Mathematics section, focusing on advanced mathematical concepts and problem solving.",
   },
 ];
 
@@ -218,5 +222,15 @@ export const projects = [
     tags: ["AI", "Machine Learning", "Deep Learning", "NLP", "Speech Recognition", "Text-to-Speech", "Python", "Audio Processing"],
     github: "",
     webapp: "", 
+  },
+  {
+    id: 2,
+    title: "Intelligent AI Chatbot for Querying Arabic Legal Documents",
+    description: "Completed at PrestaCode as my final-year engineering project, this multilingual legal chatbot answers questions about Arabic documents in Arabic, French, and English. Built a semantic search and RAG pipeline with LangChain, large language models, and a vector database. Developed the backend with Flask and deployed the application using Docker.",
+    image: IntegrationChatbotLogo,
+    images: [IntegrationChatbotLogo, ChatbotLogo],
+    tags: ["AI", "RAG", "LangChain", "LLMs", "Vector Database", "NLP", "Python", "Flask", "Docker"],
+    github: "",
+    webapp: "",
   },
 ];

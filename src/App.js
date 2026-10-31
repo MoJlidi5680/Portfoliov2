@@ -3,6 +3,7 @@ import Navbar from "./components/Navbar/Navbar";
 import About from "./components/About/About";
 import Skills from "./components/Skills/Skills";
 import Experience from "./components/Experience/Experience";
+import ProfessionalExperience from "./components/ProfessionalExperience/ProfessionalExperience";
 import Work from "./components/Work/Work";
 import Education from "./components/Education/Education";
 import Contact from "./components/Contact/Contact";
@@ -34,6 +35,7 @@ function App() {
       <main>
         <About />
         <Skills />
+        <ProfessionalExperience />
         <Experience />
         <Work />
         <Education />

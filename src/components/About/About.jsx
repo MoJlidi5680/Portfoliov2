@@ -13,14 +13,14 @@ const About = () => {
           <h1>Hi, I am</h1>
           <h2>Mohamed Jlidi</h2>
           <h3>
-            I am a <span className="typewriter">
+            I am <span className="typewriter">
               <Typewriter
                 words={[
-                  "Fullstack Developer",  
-                  "Artificial Intelligence Engineer",
-                  "Machine learning Specialist",
-                  "Deep Learning Specialist",
-                  "UI/UX Designer",
+                  "a Full-Stack Developer",
+                  "an AI Engineer",
+                  "a Machine Learning Specialist",
+                  "a Deep Learning Specialist",
+                  "a UI/UX Designer",
                 ]
               }
                 loop={0}
@@ -33,13 +33,15 @@ const About = () => {
             </span>
           </h3>
           <p>
-            I am a full-stack developer with over 2 years of experience in web development and artificial intelligence. 
-            I specialize in building innovative applications that leverage machine learning and deep learning to solve real world problems. 
-            Passionate about creating effective solutions, 
-            I develop intelligent tools that simplify workflows and deliver meaningful value to users.
+            I am a full-stack developer and AI engineer focused on developing
+            web applications and AI solutions. I specialize in machine learning,
+            deep learning, natural language processing, and generative AI. I
+            create LLM-powered applications, RAG pipelines, intelligent
+            chatbots, and AI agents. I build solutions that simplify complex
+            tasks and solve real-world problems.
           </p>
           <a
-            href="https://drive.google.com/file/d/1m-Z98rECQ98HK4buXvRTB-tdgSBIBA1N/view?usp=sharing"
+            href="https://drive.google.com/file/d/1FBJwKqQwdtZ_sS6A4SubJU3tagrPY2OL/view?usp=sharing"
             target="_blank"
             rel="noopener noreferrer"
             className="download-btn"

@@ -5,13 +5,30 @@ import "./Work.css";
 
 const Work = () => {
   const [selectedProject, setSelectedProject] = useState(null);
+  const [selectedImageIndex, setSelectedImageIndex] = useState(0);
 
   const handleOpenModal = (project) => {
     setSelectedProject(project);
+    setSelectedImageIndex(0);
   };
 
   const handleCloseModal = () => {
     setSelectedProject(null);
+    setSelectedImageIndex(0);
+  };
+
+  const selectedImages = selectedProject?.images || [selectedProject?.image];
+
+  const showPreviousImage = () => {
+    setSelectedImageIndex((currentIndex) =>
+      (currentIndex - 1 + selectedImages.length) % selectedImages.length
+    );
+  };
+
+  const showNextImage = () => {
+    setSelectedImageIndex((currentIndex) =>
+      (currentIndex + 1) % selectedImages.length
+    );
   };
 
   return (
@@ -72,10 +89,33 @@ const Work = () => {
             <div className="modal-body">
               <div className="modal-image-wrapper">
                 <img
-                  src={selectedProject.image}
-                  alt={selectedProject.title}
+                  src={selectedImages[selectedImageIndex]}
+                  alt={`${selectedProject.title} screenshot ${selectedImageIndex + 1}`}
                   className="modal-image"
                 />
+                {selectedImages.length > 1 && (
+                  <>
+                    <button
+                      type="button"
+                      className="gallery-arrow gallery-arrow-previous"
+                      onClick={showPreviousImage}
+                      aria-label="Show previous image"
+                    >
+                      ‹
+                    </button>
+                    <button
+                      type="button"
+                      className="gallery-arrow gallery-arrow-next"
+                      onClick={showNextImage}
+                      aria-label="Show next image"
+                    >
+                      ›
+                    </button>
+                    <span className="gallery-counter">
+                      {selectedImageIndex + 1} / {selectedImages.length}
+                    </span>
+                  </>
+                )}
               </div>
               <div className="modal-info">
                 <h3>{selectedProject.title}</h3>
@@ -88,22 +128,26 @@ const Work = () => {
                   ))}
                 </div>
                 <div className="modal-links">
-                  <a
-                    href={selectedProject.github}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="btn btn-code"
-                  >
-                    View Code
-                  </a>
-                  <a
-                    href={selectedProject.webapp}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="btn btn-live"
-                  >
-                    View Live
-                  </a>
+                  {selectedProject.github && (
+                    <a
+                      href={selectedProject.github}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="btn btn-code"
+                    >
+                      View Code
+                    </a>
+                  )}
+                  {selectedProject.webapp && (
+                    <a
+                      href={selectedProject.webapp}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="btn btn-live"
+                    >
+                      View Live
+                    </a>
+                  )}
                 </div>
               </div>
             </div>

@@ -24,6 +24,7 @@ const Navbar = ({ darkMode, setDarkMode }) => {
   const menuItems = [
     { id: "about", label: "About" },
     { id: "skills", label: "Skills" },
+    { id: "professional-experience", label: "Professional Experience" },
     { id: "experience", label: "Experience" },
     { id: "work", label: "Projects" },
     { id: "education", label: "Education" },

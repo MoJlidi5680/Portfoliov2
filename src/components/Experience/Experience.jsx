@@ -7,11 +7,10 @@ const Experience = () => {
     <section id="experience">
       {/* Titre de la section */}
       <div className="text-center">
-        <h2>EXPERIENCE</h2>
+        <h2>INTERNSHIPS</h2>
         <div className="underline"></div>
         <p>
-          A collection of my work experience and the roles I have taken in
-          various organizations
+          Professional internships in AI engineering and full-stack development
         </p>
       </div>
 

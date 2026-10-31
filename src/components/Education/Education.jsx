@@ -1,5 +1,5 @@
 import React from "react";
-import { education } from "../../constants"; // tes données
+import { education } from "../../constants";
 import "./Education.css";
 
 const Education = () => {
@@ -24,6 +24,7 @@ const Education = () => {
               <h3>{edu.degree}</h3>
               <h4>{edu.school}</h4>
               <p className="date">{edu.date}</p>
+              {edu.grade && <p className="grade">{edu.grade}</p>}
               <p className="description">{edu.desc}</p>
             </div>
           </div>

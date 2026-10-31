@@ -19,16 +19,20 @@ const Skills = () => (
           <h3>{category.title}</h3>
           {/* Retirer Tilt et mettre directement la grille */}
           <div className="skills-grid">
-            {category.skills.map((skill) => (
-              <div key={skill.name} className="skill-item">
-                {skill.icon ? (
-                  <skill.icon className="skill-icon" aria-label={`${skill.name} icon`} />
-                ) : (
-                  <img src={skill.logo} alt={`${skill.name} logo`} />
-                )}
-                <span>{skill.name}</span>
-              </div>
-            ))}
+            {category.skills.map((skill) => {
+              const SkillIcon = skill.icon;
+
+              return (
+                <div key={skill.name} className="skill-item">
+                  {SkillIcon ? (
+                    <SkillIcon className="skill-icon" aria-label={`${skill.name} icon`} />
+                  ) : (
+                    <img src={skill.logo} alt={`${skill.name} logo`} />
+                  )}
+                  <span>{skill.name}</span>
+                </div>
+              );
+            })}
           </div>
         </div>
       ))}
